@@ -1,41 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
 <head>
-
     <meta charset="UTF-8">
-    <title> Abrida </title>
+    <title> Site com pouco de CSS </title>
 
-        <style type="text/css">
+        <Style>
 
-           #primeiro, .p {
+            body {
 
-                color: aqua;
                 
-                 }
-            #segundo, .s {
+                 background-color: black;
+                 background-size: 1500px;
+                 background-position-x: center;
+                  }
 
-                color: rgb(245, 229, 3);
+            table {
+
+                    color: azure;
+                    font-style: italic;
+                 }
+            #botao {
+
+                    width: 220px;
+                    height: 50px;
+                    border: none;
+                    outline: none;
+                    background: #111;
+                    cursor: pointer;
+                    position: relative;
+                    z-index: 0;
+                    border-radius: 10px;
+                 }
+            #botao:before{
+                    content: '';
+                    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff,
+                    #7a00ff, #ff00c8, #ff0000);
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    background-size: 400%;
+                    z-index: -1;
+                    filter: blur(5px);
+                    width: calc(100% + 4px);
+                    height: calc(100% + 4px);
+                    animation: glowing 20s linear infinite;
+                    opacity: 1;
+                    transition: opacity .3s ease-in-out;
+                    border-radius: 10px;
+                    
 
             }
-        </style>
+         </Style>
 
 </head>
 
-<body bgcolor="000000">
-<br><br>
+<body>
 
-    <a href="https://www.youtube.com"> <button> Meu botao   </button></a>
-    
-    <h1 class="p">Titulo de qualquer tamanho </h1>
-    
-    <p id="primeiro"> Paragrafo sem nada escrito </p>
 
-    <p id="segundo"> Paragrafo sem nada escrito 1.1</p>
+    <table align="center">
+        <tr>    
+            <th>
+                <h1> Seja bem vindo ao site!</h1>
+            </th>
+        </tr>
 
-    <h1 class="s"> Titulo de qualquer tamanho 1.1</h1>
+        <tr>
+            <th>
+                <button id="botao"><h1> Entrar </h1></button>
+            </th>
+        </tr>
+    </table>
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
